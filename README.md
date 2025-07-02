@@ -42,10 +42,13 @@ A stylish web application where users can share their outfits, get fashion inspi
 - **After clicking account**
 
 
-- **post 1**
+**User 1**
 
 
 ![Post1](images/post1.png) 
+
+
+**User 2**
 
 
 ![Post2](images/post2.png) 
