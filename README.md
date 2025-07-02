@@ -55,4 +55,4 @@ To run this project locally:
 
 ##  Challenges
 
-One of the most challenging parts was connecting the database to the website for user output. When I first built the app, after a user uploaded a picture and clicked on it, the page didn’t display the image correctly. Additionally, all accounts were showing the same pictures. Solving this helped me understand how to manage user-specific data and improve database queries.
+   One of the most challenging parts was connecting the database to the website for user output. When I first built the app, after a user uploaded a picture and clicked on it, the page didn’t display the image correctly. Additionally, all accounts were showing the same pictures. Solving this helped me understand how to manage user-specific data and improve database queries.
