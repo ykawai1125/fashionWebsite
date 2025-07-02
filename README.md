@@ -23,14 +23,11 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ## Screenshots
 
-!Account Page  
-!Login Page  
-!Post 1  
-![Post 2]
-!Weather Page
-
-
-
+!Account  
+!Login  
+!Post1  
+!Post2
+!Weather
 
 
 ##  Getting Started
