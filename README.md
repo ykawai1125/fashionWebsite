@@ -27,9 +27,9 @@ A stylish web application where users can share their outfits, get fashion inspi
 ![Create](images/create.png) 
 ![Homepage](images/homepage.png)  
 ![Login](images/login.png)  
-!Post 1  
-!Post 2  
-!Weather Page
+![Post1](images/post1.png)  
+![Post2](images/post2.png)  
+![Weather](images/weather.png)
 
 
 
