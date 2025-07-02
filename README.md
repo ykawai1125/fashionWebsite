@@ -21,6 +21,28 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ---
 
+##  Screenshots
+
+### Homepage
+!Homepage
+
+### Account Page
+!Account
+
+### Create Account
+!Create
+
+### Login
+!Login
+
+### Post up
+!Post1
+
+!Post2
+
+### Weather
+!Weather
+
 ##  Getting Started
 
 To run this project locally:
