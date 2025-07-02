@@ -40,6 +40,7 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ![Account](images/account.png)   
 - **After clicking account**
+**post 1**
 
 
 ![Post1](images/post1.png) 
