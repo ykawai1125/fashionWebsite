@@ -21,7 +21,7 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Homepage
 !Homepage
@@ -37,7 +37,7 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ### Post Up
 !Post1  
-![Post
+!Post2
 
 ### Weather
 !Weather
