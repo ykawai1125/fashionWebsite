@@ -23,10 +23,10 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ## Screenshots
 
-!Account Page  
-![Create Page 
+![Account](images/account.png)    
+![Create](images/create.png) 
 ![Homepage](images/homepage.png)  
-!Login Page  
+![Login](images/login.png)  
 !Post 1  
 !Post 2  
 !Weather Page
