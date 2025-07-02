@@ -1,0 +1,67 @@
+<!-- checking user account for watching-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="user-style.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="profile.png" alt="Profile" class="profile-pic" />
+      <div class="profile-info">
+        <h2 id="username">@username</h2>
+        <p id="height">@height</p>
+        <div class="stats">
+          <span><strong id="post-count">0</strong> Posts</span>
+        </div>
+      </div>
+    </div>
+    <div class="tabs">
+      <button class="tab active">Post</button>
+    </div>
+    <div class="post-grid" id="user-style"></div>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">🏠</a>
+    <a href="search.html">🔍</a>
+    <a href="#">➕</a>
+    <a href="#">❤️</a>
+    <a href="setting.html">👤</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const userId = params.get('id');
+
+    fetch(`/posts/${userId}`)
+      .then(res => res.json())
+      .then(posts => {
+        const container = document.getElementById('user-style');
+        document.getElementById('post-count').textContent = posts.length;
+
+        posts.forEach(post => {
+          const img = document.createElement('img');
+          img.src = post.image_path;
+          img.alt = "User style";
+          img.className = "post-image";
+          container.appendChild(img);
+        });
+      });
+
+    fetch('/api/users')
+      .then(res => res.json())
+      .then(users => {
+        const user = users.find(u => u.id == userId);
+        if (user) {
+          document.getElementById('username').textContent = user.username;
+          document.getElementById('height').textContent = user.height ? `${user.height} cm` : 'Height not available';
+          // You can also update gender/height if stored
+        }
+      });
+  </script>
+</body>
+</html>

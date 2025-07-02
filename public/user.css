@@ -1,0 +1,129 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.account-container {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.tabs {
+  display: flex;
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.tabs button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  background: none;
+  font-size: 0.95em;
+  cursor: pointer;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+
+.tabs button:last-child {
+  border-right: none;
+}
+
+
+.tabs, .sub-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.tabs button, .sub-tabs button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tabs button:hover, .sub-tabs button:hover {
+  background-color: #f0f0f0;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+.empty-state {
+  text-align: center;
+  margin-top: 40px;
+  color: #999;
+}
+
+.empty-state p {
+  margin: 10px 0;
+}
+
+.empty-state a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}

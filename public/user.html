@@ -1,0 +1,47 @@
+<!-- checking user account for editing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Account</title>
+  <link rel="stylesheet" href="user.css" />
+</head>
+<body>
+  <div class="account-container">
+
+    <h2><span id="usernameDisplay"></span> outfit</h2>
+
+    <div class="profile-section">
+      <p>@<span id="userHandle"></span></p>
+    </div>
+
+    <div class="tabs">
+      <button onclick="showTab('posts')">My Posts</button>
+    </div>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" />
+      <input type="hidden" name="user_id" id="userIdInput" />
+      <button type="submit">Upload</button>
+    </form>
+
+    <div id="gallery"></div>
+    <div id="tabContent">
+      <p>Select a tab to view content.</p>
+    </div>
+    
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html">🏠</a>
+    <a href="search.html">🔍</a>
+    <a href="#">➕</a>
+    <a href="#">❤️</a>
+    <a href="setting.html">👤</a>
+  </div>
+  </div>
+
+  <script src="user.js"></script>
+</body>
+</html>
