@@ -24,8 +24,10 @@ A stylish web application where users can share their outfits, get fashion inspi
 ## Screenshots
 
 **Defalut Page**
+====
 ![Homepage](images/homepage.png)  
 **Creting account**
+====
 ![Create](images/create.png) 
  **Login to account**
 ![Login](images/login.png)  
