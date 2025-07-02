@@ -26,6 +26,7 @@ A stylish web application where users can share their outfits, get fashion inspi
 ### Defalut Page
 ![Homepage](images/homepage.png) 
 **Showing every account**
+==========================
 ![Account](images/account.png)    
 
 ![Create](images/create.png) 
