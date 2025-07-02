@@ -24,23 +24,23 @@ A stylish web application where users can share their outfits, get fashion inspi
 ##  Screenshots
 
 ### Homepage
-!Homepage
+!homepage
 
 ### Account Page
-!Account
+!account
 
 ### Create Account
-!Create
+!create
 
 ### Login
-!Login
+!login
 
 ### Post Up
-!Post1  
-!Post2
+!post1  
+!post2
 
 ### Weather
-!Weather
+!weather
 
 
 ##  Getting Started
