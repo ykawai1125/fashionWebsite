@@ -23,6 +23,7 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ## Screenshots
 
+
 ![Account](images/account.png)    
 ![Create](images/create.png) 
 ![Homepage](images/homepage.png)  
