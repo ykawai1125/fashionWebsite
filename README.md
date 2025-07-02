@@ -23,7 +23,7 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 ## Screenshots
 
-**Defalut Page**  
+- **Defalut Page**  
 
 
 ![Homepage](images/homepage.png)  
@@ -31,22 +31,22 @@ A stylish web application where users can share their outfits, get fashion inspi
 
 
 ![Create](images/create.png) 
- **Login to account**
+- **Login to account**
 
  
 ![Login](images/login.png)  
-**Showing every account**
+- **Showing every account**
 
 
 ![Account](images/account.png)   
-**After clicking account**
+- **After clicking account**
 
 
 ![Post1](images/post1.png) 
 
 
 ![Post2](images/post2.png) 
-**Checking today's weather**
+- **Checking today's weather**
 
 
 ![Weather](images/weather.png)
