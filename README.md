@@ -22,22 +22,22 @@ A stylish web application where users can share their outfits, get fashion inspi
 ---
 
 ## Screenshots
------
-**Defalut Page**
-====================
-![Homepage](images/homepage.png) 
-**Showing every account**
-==========================
-![Account](images/account.png)    
 
+**Defalut Page**
+![Homepage](images/homepage.png)  
+**Creting account**
 ![Create](images/create.png) 
- 
+ **Login to account**
 ![Login](images/login.png)  
+**Showing every account**
+![Account](images/account.png)   
+**Showing some users account**
 ![Post1](images/post1.png)  
-![Post2](images/post2.png)  
+![Post2](images/post2.png) 
+**Checking today's weather**
 ![Weather](images/weather.png)
 
-
+---
 
 ##  Getting Started
 
