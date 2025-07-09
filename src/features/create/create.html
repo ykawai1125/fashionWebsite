@@ -1,0 +1,33 @@
+<!-- making account -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <link rel="stylesheet" href="create.css" />
+</head>
+<body>
+  <div class="user-form">
+    <h2>Create Your Account</h2>
+    <form id="registrationForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="email" id="email" placeholder="Email" autocomplete="off" required />
+      <input type="password" id="password" placeholder="Password" autocomplete="new-password" required />
+      <input type="number" id="height" placeholder="Height (cm)" required />
+      <button type="submit">Register</button>
+    </form>
+    <p id="confirmationMessage">Account created successfully!</p>
+  </div>
+
+   <div class="navbar">
+    <a href="/">🏠</a>
+    <a href="../search/search.html">🔍</a>
+    <a href="../login/login.html">➕</a>
+    <a href="#">❤️</a>
+    <a href="../setting/setting.html">👤</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
