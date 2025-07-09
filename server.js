@@ -8,7 +8,7 @@ const port = 8080;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'src')));
 
 // MySQL connection
 const db = mysql.createConnection({
@@ -28,23 +28,24 @@ db.connect(err => {
 
 // Serve homepage
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'src/index.html'));
 });
+
 
 // Handle registration
 
 app.post('/register', (req, res) => {
-  const { username, email, password, height } = req.body;
-  const sql = 'INSERT INTO users (username, email, password, height) VALUES (?, ?, ?, ?)';
-  db.query(sql, [username, email, password, height], (err, result) => {
-    if (err) {
-      console.error('Error inserting data:', err);
-      res.status(500).send('Failed to create account');
-    } else {
-      console.log('User registered:', result.insertId);
-      res.status(200).send('Account created successfully');
-    }
-  });
+  const { username, email, password, height } = req.body;
+  const sql = 'INSERT INTO users (username, email, password, height) VALUES (?, ?, ?, ?)';
+  db.query(sql, [username, email, password, height], (err, result) => {
+    if (err) {
+      console.error('Error inserting data:', err);
+      res.status(500).send('Failed to create account');
+    } else {
+      console.log('User registered:', result.insertId);
+      res.status(200).send('Account created successfully');
+    }
+  });
 });
 
 
@@ -159,8 +160,6 @@ app.get('/api/user-thumbnails', (req, res) => {
     res.json(results);
   });
 });
-
-
 
 // Start server
 app.listen(port, () => {

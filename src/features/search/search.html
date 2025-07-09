@@ -8,17 +8,17 @@
 <body>
   <header><h1>Fashion Users</h1></header>
   <div id="user-grid" class="grid">
-     <a href = "user-style.html"></a>
+     <a href = "../user_style/user-style.html"></a>
   </div>
 
   <div id="user-grid" class="grid"></div>
 
   <div class="navbar">
-    <a href="index.html">🏠</a>
-    <a href="search.html">🔍</a>
-    <a href="#">➕</a>
+    <a href="/">🏠</a>
+    <a href="../search/search.html">🔍</a>
+    <a href="../login/login.html">➕</a>
     <a href="#">❤️</a>
-    <a href="setting.html">👤</a>
+    <a href="../setting/setting.html">👤</a>
   </div>
 
 <script>
@@ -34,7 +34,7 @@ fetch('/api/user-thumbnails')
         <p>${user.username}</p>
       `;
       card.onclick = () => {
-        window.location.href = `user-style.html?id=${user.id}`;
+        window.location.href = `/features/user_style/user-style.html?id=${user.id}`;
       };
       grid.appendChild(card);
     });

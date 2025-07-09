@@ -20,11 +20,11 @@
   </div>
 
    <div class="navbar">
-    <a href="index.html">🏠</a>
-    <a href="search.html">🔍</a>
-    <a href="#">➕</a>
+    <a href="/">🏠</a>
+    <a href="../search/search.html">🔍</a>
+    <a href="../login/login.html">➕</a>
     <a href="#">❤️</a>
-    <a href="setting.html">👤</a>
+    <a href="../setting/setting.html">👤</a>
   </div>
 
 </body>
@@ -41,12 +41,12 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
-    });
+      });
       
 if (res.ok) {
        const data = await res.json();
         localStorage.setItem('username', data.username);
-        window.location.href = 'user.html';
+        window.location.href = '../user/user.html';
       } else {
          alert('Login failed'); 
       }

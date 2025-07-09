@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     localStorage.setItem('username', data.username);
     localStorage.setItem('userId', data.id);
 
-    location.href = 'user.html'; // redirect to profile page
+    location.href = '../user/user.html'; // redirect to profile page
   } else {
     alert('Login failed. Please check your email and password.');
   }
