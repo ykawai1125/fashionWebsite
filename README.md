@@ -35,11 +35,11 @@ A stylish web application where users can share their outfits, get fashion inspi
 
  
 ![Login](images/login.png)  
-- **Showing every account**
+- **Reset password**
 
 
 ![Reset](images/reset.png) 
-- **Reset password**
+- **Showing every account**
 
 
 ![Account](images/account.png)   
