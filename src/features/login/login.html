@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  
   <div class="login-container">
     <h2>Login</h2>
     <form id="loginForm">
@@ -17,6 +16,9 @@
       <input type="password" id="password" placeholder="password" autocomplete="new-password"required />
       <button type="submit">Login</button>
     </form>
+     <div style="text-align: center; margin-top: 15px;">
+     <a href="../login/reset-request.html" style="color: #666; text-decoration: none;">Forgot password?</a>
+     </div>
   </div>
 
    <div class="navbar">
@@ -26,10 +28,7 @@
     <a href="#">❤️</a>
     <a href="../setting/setting.html">👤</a>
   </div>
-
 </body>
-
- 
 
 <script>
    document.getElementById('loginForm').addEventListener('submit', async function (e) {

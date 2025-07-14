@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Outfits</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="app-name">OUTFIT</div>
+    <div class="icons">
+      <span><a href="../features/weather/weather.html">☀️</a></span>
+      <span><a href="#">🔔</a></span>
+    </div>
+  </div>
+
+  <h1>My Favorite Outfits</h1>
+
+  <div class="feed" id="favoritesFeed">
+    <!-- Favorites will be loaded here -->
+  </div>
+
+  <div class="navbar">
+    <a href="../index.html">🏠</a>
+    <a href="../features/search/search.html">🔍</a>
+    <a href="../features/login/login.html">➕</a>
+    <a href="favorites.html">❤️</a>
+    <a href="../features/setting/setting.html">👤</a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+      const userId = localStorage.getItem('userId'); // You'll need to set this during login
+      
+      try {
+        const response = await fetch(`/api/favorites/${userId}`);
+        const favorites = await response.json();
+        const feed = document.getElementById('favoritesFeed');
+        
+        if (favorites.length === 0) {
+          feed.innerHTML = '<p>No favorite outfits yet. Start by clicking the heart on outfits you like!</p>';
+          return;
+        }
+        
+        favorites.forEach(outfit => {
+          const post = document.createElement('div');
+          post.className = 'post';
+          post.innerHTML = `
+            <div class="image-container">
+              <img src="${outfit.image_path}" alt="${outfit.comment || 'Outfit'}"/>
+              <div class="comment">${outfit.comment || ''}</div>
+              <button class="favorite-btn active" data-outfit-id="${outfit.id}">❤️</button>
+            </div>
+            <div class="user-info">
+              <div>
+                <div class="username">${outfit.username || 'User'}</div>
+                ${outfit.height ? `<div class="height">Height: ${outfit.height}</div>` : ''}
+              </div>
+            </div>
+          `;
+          feed.appendChild(post);
+        });
+      } catch (error) {
+        console.error('Error loading favorites:', error);
+        document.getElementById('favoritesFeed').innerHTML = 
+          '<p>Error loading favorites. Please try again later.</p>';
+      }
+    });
+  </script>
+</body>
+</html>
